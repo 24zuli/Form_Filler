@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Filler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form Filler</h1>
+    <form id="form">
+        <label for="fileInput">Upload PDF or DOC file:</label>
+        <input type="file" id="fileInput" accept=".pdf,.doc,.docx"><br><br>
+        <label for="formUrl">Form URL:</label>
+        <input type="text" id="formUrl" placeholder="Enter form URL"><br><br>
+        <button id="fillFormButton">Fill Form</button>
+    </form>
+
+    <div id="responseContainer"></div>
+    <script src="background.js"></script>
+    <script src="contect.js"></script>
+    <script src="popup.js"></script>
+    <script src="action.js"></script>
+    <script src="injector.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+
+</body>
+
+</html>
